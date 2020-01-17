@@ -72,11 +72,11 @@ a#voltar {
         color: snow;
         margin-bottom: 20px;
     }
-    
-    #logo {
-        width: 120px;
-        height: 160px;
-        margin: 20px auto;
+
+    #logo img{
+        width: 08em;
+        height: 10em;
+        margin: 2em auto;
         background-color: cornsilk;
     }
     
@@ -162,6 +162,7 @@ a#voltar {
     }
 
     section {
+        display: flex;
         border-left: 5px ridge #fc0;
         margin-right: 15px;
         padding-top: 10px;
@@ -174,6 +175,9 @@ a#voltar {
         animation-duration: 5s;
         overflow: auto;
         min-width: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
     }
     
     legend {
@@ -189,10 +193,7 @@ a#voltar {
         border-bottom: 3px solid burlywood;
         background-color: rgb(201, 194, 194);
         padding: 50px 30px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
+       
     }
 
     .sites {
@@ -219,7 +220,7 @@ a {
     color: rgb(32, 32, 32);
 }
 
-@media only screen and (max-device-height: 580px){
+@media only screen and (max-device-height: 567px){
     body {
         min-width: 680px;
     }
