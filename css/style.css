@@ -1,0 +1,237 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    background-color: rgb(243, 235, 235);
+}
+
+a {
+    color: black;
+}
+
+a#voltar {
+    position: fixed;
+    background-color:cadetblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+@keyframes iniciar {
+    from{
+        margin-left: 100vw;
+    }
+    to{
+        margin-left: 0vw;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    #background {
+        display:none;
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 0,2em;
+        font-family: monospace;
+        text-shadow: 5px 5px 5px black;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        display: none;
+    }
+    
+    section {
+        width: 100%;
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+    
+    aside {
+        position: sticky;
+        top:-200px;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(83, 63, 63);
+        color: snow;
+        margin-bottom: 20px;
+    }
+    
+    #logo {
+        width: 120px;
+        height: 160px;
+        margin: 20px auto;
+        background-color: cornsilk;
+    }
+    
+    #resumo {
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .sites {
+        height: 10em;
+        background-color: rgba(139, 69, 19, 0.37);
+    }
+
+}
+
+@media only screen and (min-device-width: 401px) {    
+    body {
+        width: 100%;
+        min-width: 720px;
+        margin: auto;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: 32px;
+        background-color: rgb(26, 26, 26);
+        color: snow;
+        box-shadow: 0px 1px 2px 0px black;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        margin-right: 20px;
+        padding-right: 10px;
+    }
+
+    header li {
+        padding: 5px;
+    }
+    div {
+        display: flex;
+        flex-direction: row-reverse;
+        z-index: 1;
+    }
+    
+    aside {
+        border-right: 5px ridge #fc0;
+        position: fixed;
+        top: 32px;
+        left: 15px;
+        text-align: center;
+        width: 34vw;
+        height: 100vh;
+        background-color: rgb(83, 63, 63);
+        color: snow;
+        min-width: 300px;
+        font-size: 1em;
+    }
+
+    aside li  {
+        padding: 10px; 
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    #logo img{
+        width: 08em;
+        height: 10em;
+        margin: 2em auto;
+        background-color: cornsilk;
+    }
+    
+    #resumo {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    section {
+        border-left: 5px ridge #fc0;
+        margin-right: 15px;
+        padding-top: 10px;
+        text-align: center;
+        width: 60vw;
+        height: 100vh;
+        background-color: rgb(83, 63, 63);
+        margin-top: 20px; 
+        animation-name: iniciar;
+        animation-duration: 5s;
+        overflow: auto;
+        min-width: 300px;
+    }
+    
+    legend {
+        font-family: fantasy;
+        font-size: 2em;
+        font-style: italic;
+        color: snow;
+    }
+
+    #flex {
+        border: none;
+        border-top: 3px solid burlywood;
+        border-bottom: 3px solid burlywood;
+        background-color: rgb(201, 194, 194);
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .sites {
+        width: 13em;
+        height: 11em;
+        background-color: rgba(139, 69, 19, 0.37);
+        margin: 10px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px 0px black;
+    }
+
+    .sites img {
+        border-radius: 30px;
+    }
+
+    .sites:hover {
+        background-color: saddlebrown;
+        width: 210px;
+        height: 180px;
+    }
+}
+
+a {
+    color: rgb(32, 32, 32);
+}
+
+@media only screen and (max-device-height: 580px){
+    body {
+        min-width: 680px;
+    }
+    header {
+        z-index: 1;
+    }
+    aside, section {
+        overflow: scroll;
+    }
+    aside {
+        position: sticky;
+        float: left;
+    }
+}
+

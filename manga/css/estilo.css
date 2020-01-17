@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#body {
+    font-family: roboto, Helvetica, sans-serif;
+    width: 360px;
+    height: 640px;
+    margin: 20px auto;
+    border: 2px solid black;
+    box-shadow: 0 5px 5px 0 rgb(77, 74, 74);
+}
+
+header {
+    height: 90px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(77, 74, 74));
+    border-bottom: 20px solid #C7C7C7;
+}
+
+#buscar {
+    padding: 10px;
+}
+
+#container {
+    width: 360;
+    height: 520px;
+    overflow: auto;
+}
+#buscar input {
+    padding: 5px;
+    width: 90%;
+    height: 33px;
+    border: 3px solid black;
+    border-radius: 15px 0 15px 0;
+    margin-right: 5px;
+}
+
+#buscar button {
+    border: none;
+    background: transparent;
+}
+
+#logo {   
+    width:360px;
+    height: 90px;
+    background: url(../imagens/Banner.png) no-repeat left top;
+    background-size: cover;
+    text-indent: -2000px;
+}
+
+/*legend {
+    text-transform: uppercase;
+    font-size: 0.8;
+}
+
+#populares, #lançamentos, #recentes {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    width: 323px;
+    height: 163px;
+    margin: 10px auto; 
+}
+
+.manga {
+    margin: 2px;
+    min-width: 82px;
+    height: 125px;
+}
+
+.manga img {
+    width: 82px;
+    height: 125px;
+}
+
+/**
+* Carousel with image and text, custom skinned scrollbar
+**/
+#carousel-image-and-text-1, #carousel-image-and-text-2, #carousel-image-and-text-3, #carousel-image-and-text-4 {
+    overflow-x: auto;
+    width: 340px;
+    height: 163px;
+    margin: 0 auto;	
+}	
+.arrow-holder {
+    height: 250px;
+}		
+.touchcarousel-item {
+    margin-right: 1px;	
+    width: 82px;
+    height: 125px;		
+}
+.item-block {
+    width: 82px;
+    height: 125px;
+    display: block;
+}
+.item-block img,
+.item-block h4, 
+.item-block p {
+    float: left;
+    position: relative;
+    display: block;
+    margin: 0;			
+}
+.item-block img {
+    width: 82px;
+    height: 125px;	
+    border: 0;
+    padding: 0;		
+}
+.item-block {			
+    text-decoration: none;
+    color: inherit;			
+}					
+.item-block h4 {
+    font: bold 13px/20px Helvetica, Arial, sans-serif;
+    color: #000;
+    width: 158px;
+    height: auto;		
+    padding: 2px 0 0 6px;
+    -webkit-transition: color 0.2s ease-out; 
+    -moz-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;  	
+}
+.item-block:hover h4 {	
+    color: #1873c9;		
+}
+.item-block p {			
+    font: normal 13px/20px Helvetica, Arial, sans-serif;
+    color: #555;		
+    width: 158px;
+    padding: 0 0 0 6px;
+}
+.scrollbar-holder {
+    background: #CED7DB;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    right: 0;
+}
+.scrollbar {
+    background-color: #45a8ce !important;
+    bottom: 0;
+}

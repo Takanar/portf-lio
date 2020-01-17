@@ -1,0 +1,4 @@
+Cor principal e secundário de preto:
+#010101, 1E1E1E
+Cor azul:
+#7DFFFF
