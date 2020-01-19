@@ -230,6 +230,14 @@
 		cursor: pointer;
 	}
 
+	#rodape {
+		background: #294c71;
+		clear: both;
+		padding: 20px;
+		width: 100vw;
+		margin: 0 auto;
+		color: #fff;
+	}
 }
 
 @media only screen and (min-device-width: 401px){
@@ -474,13 +482,4 @@
 		margin: 0 auto;
 		color: #fff;
 	}
-}
-
-#rodape {
-	background: #294c71;
-	clear: both;
-	padding: 20px;
-	width: 750px;
-	margin: 0 auto;
-	color: #fff;
 }
