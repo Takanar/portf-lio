@@ -33,15 +33,12 @@ a#voltar {
 }
 
 @media only screen and (max-device-width: 400px) {
-    #background {
-        display:none;
-    }
-    
     body {
         width: 100vw;
         height: 100vh;
         margin: auto;
         padding: 10px;
+        box-sizing: border-box;
     }
     header h1 {
         font-size: 0,2em;
@@ -90,10 +87,11 @@ a#voltar {
     .sites {
         height: 10em;
         background-color: rgba(139, 69, 19, 0.37);
+        margin-bottom: 30px;
+        box-sizing: border-box;
     }
-
-    label {
-        display:none;
+    .sites img {
+        height: 10em;
     }
 
 }
