@@ -7,7 +7,7 @@
 }
 
 html {
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(243, 235, 235);
 }
 
 a {
@@ -54,6 +54,12 @@ a#voltar {
         display: none;
     }
     
+    section {
+        width: 100%;
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+    
     aside {
         position: sticky;
         top:-200px;
@@ -62,12 +68,6 @@ a#voltar {
         background-color: rgb(83, 63, 63);
         color: snow;
         margin-bottom: 20px;
-    }
-
-    section {
-        width: 100%;
-        margin-bottom: 20px; 
-        text-align: center;
     }
 
     #logo img{
@@ -99,27 +99,17 @@ a#voltar {
 @media only screen and (min-device-width: 401px) {    
     body {
         width: 100%;
+        min-width: 720px;
         margin: auto;
-        background-color: rgb(214, 214, 214);
-        background-image: url(../img/laptop-1478822_1280.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
-    /*barra navegação */
+
     header {
         position: fixed;
-        top: 0px;
         width: 100%;
         height: 32px;
         background-color: rgb(26, 26, 26);
         color: snow;
         box-shadow: 0px 1px 2px 0px black;
-        opacity: .7;
-        z-index: 1;
-    }
-
-    header:hover {
-        opacity: 1;
     }
 
     header ul {
@@ -133,78 +123,98 @@ a#voltar {
     header li {
         padding: 5px;
     }
-
-    #duas-colunas {
+    div {
         display: flex;
-        flex-direction: row;
-        margin-top: 40px;
+        flex-direction: row-reverse;
+        z-index: 1;
     }
-
+    
     aside {
-        width: 34vw;
-        min-width: min-content;
-        height: 100vh;
-        background-color: snow;
-        padding: 2em;
-        margin-left: 2em;
-        margin-right: 2em;
+        border-right: 5px ridge #fc0;
+        position: fixed;
+        top: 32px;
+        left: 15px;
         text-align: center;
-        box-sizing: border-box;
-        opacity: .8;
-    }
-
-    aside:hover {
-        opacity: 1;
+        width: 34vw;
+        height: 100vh;
+        background-color: rgb(83, 63, 63);
+        color: snow;
+        min-width: 300px;
+        font-size: 1em;
     }
 
     aside li  {
         padding: 10px; 
-        border-top: 1px solid rgb(209, 204, 204);
+        border-bottom: 1px solid whitesmoke;
     }
 
-    li.ultimo {
-        border-bottom: 1px solid rgb(209, 204, 204);
+    #logo img{
+        width: 08em;
+        height: 10em;
+        margin: 2em auto;
+        background-color: cornsilk;
     }
-
-    #logo {
-        margin-bottom: 10px;
-    }
-
-    .skill {
-        background-color: skyblue;
-        margin-bottom: 10px;
+    
+    #resumo {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+        padding: 10px;
     }
 
     section {
-        width: 60vw;
-        min-width: min-content;
-        height: 100vh;
-        background-color: snow;
-        padding: 2em;
-        box-sizing: border-box;
-        opacity: .8;
-    }
-
-    section:hover {
-        opacity: 1;
-    }
-
-    figure {
+        display: flex;
+        border-left: 5px ridge #fc0;
+        margin-right: 15px;
+        padding-top: 10px;
         text-align: center;
-        background-color: skyblue ;
+        width: 60vw;
+        height: 100vh;
+        background-color: rgb(83, 63, 63);
+        margin-top: 20px; 
+        animation-name: iniciar;
+        animation-duration: 5s;
+        overflow: auto;
+        min-width: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
     }
-
-    figure:hover {
-        background: turquoise;
+    
+    legend {
+        font-family: fantasy;
+        font-size: 2em;
+        font-style: italic;
+        color: snow;
     }
 
     #flex {
-        display: flex;
-        flex-wrap: wrap;
+        border: none;
+        border-top: 3px solid burlywood;
+        border-bottom: 3px solid burlywood;
+        background-color: rgb(201, 194, 194);
+        padding: 50px 30px;
+       
     }
 
     .sites {
-        margin: 30px 30px 0px 30px;
+        width: 13em;
+        height: 11em;
+        background-color: rgba(139, 69, 19, 0.37);
+        margin: 10px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px 0px black;
+    }
+
+    .sites img {
+        border-radius: 30px;
+    }
+
+    .sites:hover {
+        background-color: saddlebrown;
+        width: 210px;
+        height: 180px;
     }
 }
 
