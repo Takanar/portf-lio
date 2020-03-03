@@ -1,0 +1,49 @@
+html {
+    cursor: url(../img/mata_mosca.png)30 30, auto;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;  
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#logo img {
+    width: 40%;
+    height: 50%;
+}
+
+#logo .iniciar, .button {
+    margin-top: 10px;
+    border-radius: 10%;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+}
+
+#logo button.iniciar, .button {
+    background-color: rgb(37, 214, 46);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-color: rgba(37, 214, 46, 0.685);
+}
