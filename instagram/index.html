@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Listar fotos
+        </h1>
+    </div>
+    <div id="instagram">
+
+    </div>
+    <script>
+        var token = 'IGQVJXYUlyQ0hoT0MtNzFGVXJma2FLY0FNamMwbG1Sb2wtUThDWUdtYkRyWmoxVm9Va1RzYlBnTGIzd0dobGxnRnZARRlVmNTVYLWhVQUw2cVVOQkc5S2J5cTZAXNVRZAU1ZAleWZAFSkZAaR3BqckZAfNG1KLTh6cWo2NTItcXdn'
+        fetch("https://graph.instagram.com/me/media?fields=username,id,caption,media_type,thumbnail_url,media_url,timestamp&access_token=" + token)
+        .then(function(response) {return response.json()})
+        .then(function(response) { 
+            console.log(response)
+            response.data.map(value => {
+                var img = document.createElement('img')
+                img.src = value.thumbnail_url
+                img.style = 'margin-left: 15px; margin: 5px'
+                var src = document.getElementById('instagram')
+                src.appendChild(img)
+                var caption = document.createElement('h5')
+                caption.innerHTML = value.caption
+                src.appendChild(caption)
+                let data = new Date(value.timestamp)
+                let dataformatada = data.getDate() +"/"+ (data.getMonth()+1) +"/"+ data.getFullYear() 
+                var timestamp = document.createElement('h5')
+                timestamp.innerHTML = dataformatada;
+                src.appendChild(timestamp)
+            })
+        })
+    </script>
+</body>
+</html>
