@@ -1,0 +1,1 @@
+Projeto sugerido pelo bootcamp JavaScript Game Developer nomeado como "Criando seu jogo no estilo Space Shooter", ministrado por Gabriela Pinheiro.

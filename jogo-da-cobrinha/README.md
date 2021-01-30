@@ -1,0 +1,1 @@
+Projeto sugerido pelo bootcamp html-web-developer nomeado como "Recriando o jogo da cobrinha com JavaScript", ministrado por Gabriela Pinheiro.
